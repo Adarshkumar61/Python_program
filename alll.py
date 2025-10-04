@@ -438,30 +438,30 @@ import numpy as np
 
 
 # this is a pattern program:
-for i in range(1, 6):
-    for j in range(1, i + 1):
-        print("*", end="")
-    print()
+# for i in range(1, 6):
+#     for j in range(1, i + 1):
+#         print("*", end="")
+#     print()
 
-# Newton-Raphson Method in Python:
-def f(x):
-    return x**3 - 3*x +2
-def df(x):
-    return 3*x**2 - 3
+# # Newton-Raphson Method in Python:
+# def f(x):
+#     return x**3 - 3*x +2
+# def df(x):
+#     return 3*x**2 - 3
 
-def newton_rapshan_method(x0, toi = 1e-6, max_iter = 100):
-    x = x0
-    for i in range(max_iter):
-        fx = f(x)
-        dfx = df(x)
-        if dfx == 0:
-            print('Derivative zero')
-            return None
-        new = x - fx / dfx
-        if (new-x)<toi:
-            return new
-        x= new
-    return x
-root = newton_rapshan_method(2)
-print(f'root is: {root}')
+# def newton_rapshan_method(x0, toi = 1e-6, max_iter = 100):
+#     x = x0
+#     for i in range(max_iter):
+#         fx = f(x)
+#         dfx = df(x)
+#         if dfx == 0:
+#             print('Derivative zero')
+#             return None
+#         new = x - fx / dfx
+#         if (new-x)<toi:
+#             return new
+#         x= new
+#     return x
+# root = newton_rapshan_method(2)
+# print(f'root is: {root}')
 
