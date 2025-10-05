@@ -465,11 +465,11 @@ import numpy as np
 # root = newton_rapshan_method(2)
 # print(f'root is: {root}')
 
-x = -10
-print(abs(x))
+# x = -10
+# print(abs(x))
 
-x = ([12, 23, 6, 38, 14])
-print(sorted(x))
+# x = ([12, 23, 6, 38, 14])
+# print(sorted(x))
 
 y = 'hello python!'
-print(y[::-1])
+print(y[:8:-1])
