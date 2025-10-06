@@ -471,5 +471,5 @@ import numpy as np
 # x = ([12, 23, 6, 38, 14])
 # print(sorted(x))
 
-y = 'hello python!'
-print(y[:8:-1])
+# y = 'hello python!'
+# print(y[:8:-1])
