@@ -1,7 +1,7 @@
 import threading
 import time
 
-def frame():
+def frame(): 
     while True:
         print('Frame capturing...🤖')
         time.sleep(1)
