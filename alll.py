@@ -473,3 +473,14 @@ import numpy as np
 
 # y = 'hello python!'
 # print(y[:8:-1])
+
+
+# num1 = int(1)
+for i in range(1, 11):
+    num1 = 5 * i
+    print(num1)
+
+# table = 2
+# for i in range(1,11):
+#     table = i*2
+#     print(table)
