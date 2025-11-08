@@ -476,9 +476,9 @@ import numpy as np
 
 
 # num1 = int(1)
-for i in range(1, 11):
-    num1 = 5 * i
-    print(num1)
+# for i in range(1, 11):
+#     num1 = 5 * i
+#     print(num1)
 
 # table = 2
 # for i in range(1,11):
