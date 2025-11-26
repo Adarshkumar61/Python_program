@@ -484,3 +484,54 @@ import numpy as np
 # for i in range(1,11):
 #     table = i*2
 #     print(table)
+
+
+# import random
+# import string
+
+# letter = " " + string.ascii_letters + string.digits + string.punctuation
+# letter = list(letter)
+# key = letter.copy()
+# random.shuffle(key)
+
+# text = input("Enter your msg: ")
+# cipher = ""
+# for l in text:
+#     index = letter.index(l)
+#     cipher += key[index]
+# print("Your origin msg: ", text)
+# print("cipher text of : ", text, "is: ", cipher)
+
+# cipher = input("Enter the encrypted msg: ")
+# text = " "
+# for c in cipher:
+#     index = key.index(c)
+#     text += letter[index]
+# print("Your origin msg is: ", text)
+
+# dictt = {'a': '1','b': '2','c': '3','d': '4','e': '5','f': '6','g': '7','h': '8','i': '9','j': '10'}
+# num = [1, 3, 5, 7, 9]
+# for num in num:
+
+#     if num == 3:
+#         break
+#     print(num)
+
+# nu = ['b', 'a', 'd', 'c', 'e']
+def print_fibonacci(n):
+    if n <= 0:
+        print("n should be a positive integer")
+        return
+    a, b = 0, 1
+    for _ in range(n):
+        print(a, end=' ')
+        a, b = b, a + b
+    print()
+
+# Example: print first 10 Fibonacci numbers
+print_fibonacci(10)
+# print(nu)
+
+# t = nu.insert(2, 'z')
+# p = nu.pop(4)
+# a = nu.remove
