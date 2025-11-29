@@ -518,20 +518,68 @@ import numpy as np
 #     print(num)
 
 # nu = ['b', 'a', 'd', 'c', 'e']
-def print_fibonacci(n):
-    if n <= 0:
-        print("n should be a positive integer")
-        return
-    a, b = 0, 1
-    for _ in range(n):
-        print(a, end=' ')
-        a, b = b, a + b
-    print()
+# def print_fibonacci(n):
+#     if n <= 0:
+#         print("n should be a positive integer")
+#         return
+#     a, b = 0, 1
+#     for _ in range(n):
+#         print(a, end=' ')
+#         a, b = b, a + b
+#     print()
 
 # Example: print first 10 Fibonacci numbers
-print_fibonacci(10)
+# print_fibonacci(10)
 # print(nu)
 
 # t = nu.insert(2, 'z')
 # p = nu.pop(4)
 # a = nu.remove
+
+
+# gibbernet.py — run this on every device
+# from cryptography.fernet import Fernet
+# import socket
+# import msgpack
+# import stepic
+# from PIL import Image
+# import io
+
+# # 1. Your tribe’s secret key (NEVER commit this)
+# TRIBE_KEY = b'your-super-secret-256-bit-key-here=='
+
+# # 2. Encrypt + hide inside a cute image
+# def send_message(target_ip, message: str, cover_image_path="frog.png"):
+#     f = Fernet(TRIBE_KEY)
+#     encrypted = f.encrypt(message.encode())
+#     packed = msgpack.packb({"msg": encrypted, "from": "emoji-haiku-here"})
+    
+#     # Hide in image
+#     im = Image.open(cover_image_path)
+#     im2 = stepic.encode(im, packed)
+#     buf = io.BytesIO()
+#     im2.save(buf, format='PNG')
+#     img_bytes = buf.getvalue()
+    
+#     # Send raw over UDP (looks like random image download)
+#     sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+#     sock.sendto(img_bytes, (target_ip, 6969))
+
+# # 3. Receive and decode
+# def listen():
+#     sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+#     sock.bind(('', 6969))
+#     while True:
+#         data, addr = sock.recvfrom(65535)
+#         try:
+#             im = Image.open(io.BytesIO(data))
+#             hidden = stepic.decode(im)
+#             unpacked = msgpack.unpackb(hidden, raw=False)
+#             f = Fernet(TRIBE_KEY)
+#             msg = f.decrypt(unpacked["msg"]).decode()
+#             print(f"[{unpacked['from']}] {msg}")
+#         except:
+#             pass  # ignore non-tribe traffic (99.999% of packets)
+
+for i in range(1, 3):
+    print("")
