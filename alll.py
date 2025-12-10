@@ -580,6 +580,29 @@ import numpy as np
 #             print(f"[{unpacked['from']}] {msg}")
 #         except:
 #             pass  # ignore non-tribe traffic (99.999% of packets)
+# s = 0
+# for i in range(1, 11):
+#     s+=i
+# print("summ: ", s)
+# s = 0
+# for i in range(1,11):
+#     s += i
+# print("Sum =", s)
 
-for i in range(1, 3):
-    print("")
+
+# x = lambda x, y: x+ y
+# print(x(2,3))
+
+# arr = np.array([1,2,3,4])
+# # print(arr)
+# print(np.sqrt(arr))
+# def name(name = "adarsh"):
+#     print("hello", name)
+# name()
+# name("jii")
+# def greet(name="Guest"):
+#     print("Hello", name)
+
+# greet()
+# greet("Adarsh")
+
