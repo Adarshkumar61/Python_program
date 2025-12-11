@@ -612,7 +612,7 @@ import numpy as np
 
 # x = 20 
 def change(): 
-    # global x 
+    global x 
     x = 100
     print(x)
 change() 
