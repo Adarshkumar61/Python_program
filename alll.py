@@ -606,3 +606,14 @@ import numpy as np
 # greet()
 # greet("Adarsh")
 
+# def greet(name, age = 18):
+#     print("Hello", name, "your age is: ", age)
+# greet("adarsh")
+
+# x = 20 
+def change(): 
+    # global x 
+    x = 100
+    print(x)
+change() 
+print(x)
