@@ -611,9 +611,53 @@ import numpy as np
 # greet("adarsh")
 
 # x = 20 
-def change(): 
-    global x 
-    x = 100
-    print(x)
-change() 
-print(x)
+# def change(): 
+#     global x 
+#     x = 100
+#     print(x)
+# change() 
+# print(x)
+# import math
+
+# math.fabs(-10)
+
+
+# listt  = []
+
+# def add_item(item):
+#     listt.append(item)
+#     print("note added successfully..")
+
+# def view_items():
+#     for i in range(len(listt)):
+#         print(f"{i + 1}. {listt[i]}")
+
+# def remove_item(index):
+#     if index < 1 or index > len(listt):
+#         print("invalid note number!..")
+#     else:
+#         del listt[index - 1]
+#         print("note removed successfully..")
+
+# while True:
+#     print("1. Add Note")
+#     print("2. View Notes")
+#     print("3. Remove Note")
+#     print("4. Quit")
+#     choice = input("Enter your choice (1-4): ")
+    
+#     if choice == "1":
+#         add_item(input("Enter your note: "))
+#     elif choice == "2":
+#         view_items()
+#     elif choice == "3":
+#         index = int(input("Enter the note number to remove: "))
+#         remove_item(index)
+#     elif choice == "4":
+#         print("Exiting the program. Goodbye!")
+#         break
+#     else:
+#         print("Invalid choice! Please choose a valid option (1-4).")
+
+d = eval(input("enter your number: "))
+print(d)
