@@ -42,3 +42,21 @@ def reach_point(x: float, y: float, z: float, smooth: bool = True) -> Dict[str, 
     # -------- Motion Execution (Simulation) --------
     motion_type = "Smooth trajectory" if smooth else "Direct movement"
     
+
+    print(f"\n🔹 Target Position: X={x} mm, Y={y} mm, Z={z} mm")
+    print(f"🔹 Motion Type: {motion_type}")
+    print(f"🔹 Motor Steps: {steps}")
+    print(f"🔹 Distance to Target: {round(distance, 2)} mm")
+    print(f"🔹 Estimated Time: {estimated_time} seconds")
+
+    return {
+        "target": (x, y, z),
+        "steps": steps,
+        "distance_mm": distance,
+        "estimated_time_sec": estimated_time,
+        "smooth_motion": smooth
+    }
+
+
+# -------- Example Call --------
+reach_point(500, 100, 150)
