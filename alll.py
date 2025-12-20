@@ -659,5 +659,5 @@ import numpy as np
 #     else:
 #         print("Invalid choice! Please choose a valid option (1-4).")
 
-d = eval(input("enter your number: "))
-print(d)
+# d = eval(input("enter your number: "))
+# print(d)
