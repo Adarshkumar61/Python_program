@@ -658,6 +658,6 @@ import numpy as np
 #         break
 #     else:
 #         print("Invalid choice! Please choose a valid option (1-4).")
-
+#calculator program in one line:
 # d = eval(input("enter your number: "))
 # print(d)
