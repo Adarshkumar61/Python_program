@@ -661,3 +661,23 @@ import numpy as np
 #calculator program in one line:
 # d = eval(input("enter your number: "))
 # print(d)
+
+
+def idle(): 
+    print("Idle")
+def navigate(): 
+    print("Navigating")
+def dock(): 
+    print("Docking")
+
+state_actions = {
+    "IDLE ": idle,
+    "NAV": navigate,
+    "DOCK": dock
+}
+
+current_state = random.choice(list(state_actions.keys()))
+probability = [80, 2, 8]
+result = random.choices(list(state_actions.keys()), weights=probability)[0] == current_state
+print(f"Current State: {current_state}")
+print(f"Next State: {result}")
