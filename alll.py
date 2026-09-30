@@ -718,4 +718,4 @@ def selection_sort(arr):
 
 arr = [64, 25, 12, 22, 11]
 selection_sort(arr)
-print("Sorted array:", arr)
+print("Sorted array:", arr) 
