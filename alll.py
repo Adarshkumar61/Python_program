@@ -663,21 +663,59 @@ import numpy as np
 # print(d)
 
 
-def idle(): 
-    print("Idle")
-def navigate(): 
-    print("Navigating")
-def dock(): 
-    print("Docking")
+# def idle(): 
+#     print("Idle")
+# def navigate(): 
+#     print("Navigating")
+# def dock(): 
+#     print("Docking")
 
-state_actions = {
-    "IDLE ": idle,
-    "NAV": navigate,
-    "DOCK": dock
-}
+# state_actions = {
+#     "IDLE ": idle,
+#     "NAV": navigate,
+#     "DOCK": dock
+# }
 
-current_state = random.choice(list(state_actions.keys()))
-probability = [80, 2, 8]
-result = random.choices(list(state_actions.keys()), weights=probability)[0] == current_state
-print(f"Current State: {current_state}")
-print(f"Next State: {result}")
+# current_state = random.choice(list(state_actions.keys()))
+# probability = [80, 2, 8]
+# result = random.choices(list(state_actions.keys()), weights=probability)[0] == current_state
+# print(f"Current State: {current_state}")
+# print(f"Next State: {result}")
+
+
+# array = [4,5,1,2,5,6,6]
+
+# def unique_no(array):
+#     unique = list(set(array))
+#     unique.sort()
+
+# def third_largest(arr):
+#     first = second = third = float('-inf')
+#     # first = second = third = float('-inf')
+#     # first = second = third = 0
+#     for num in set(arr):
+#         if num > first:
+#             third = second
+#             second = first
+#             first = num
+#         elif num > second:
+#             third = second
+#             second = num
+#         elif num > third:
+#             third = num
+
+#     return third
+# arr = [4,5,1,2,5,6,6]
+# print(third_largest(arr))
+
+def selection_sort(arr):
+    for i in range(len(arr)):
+        min_index = i
+        for j in range(i+1, len(arr)):
+            if arr[j] < arr[min_index]:
+                min_index = j
+        arr[i], arr[min_index] = arr[min_index], arr[i]
+
+arr = [64, 25, 12, 22, 11]
+selection_sort(arr)
+print("Sorted array:", arr)
