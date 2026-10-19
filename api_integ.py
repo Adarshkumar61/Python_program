@@ -6,7 +6,7 @@ import seaborn as sns
 app = Flask(__name__)
 
 # Connect to SQLite database
-conn = sqlite3.connect('contact_book.db')
+conn = sqlite3.connect('contact_book.db')   
 c = conn.cursor()
 
 # Create table
