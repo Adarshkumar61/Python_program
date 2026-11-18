@@ -691,7 +691,7 @@ import numpy as np
  
 # def third_largest(arr):
 #     first = second = third = float('-inf')
-#     # first = second = third = float('-inf')
+#     # first = second = third = float('-inf')     
 #     # first = second = third = 0
 #     for num in set(arr):
 #         if num > first:
